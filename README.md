@@ -7,7 +7,7 @@ V projektu připraveném v tomto repozitáři vytvořte React komponentu `Regist
 Stylování komponenty řešit nemusíte.
 
 1. Vytvořte složku `src/components` a založte v ní komponentu `Registration`. 
-1. V komponentě vytvořte jeden stav `user`. Ve stavu bude objekt reprezentující všechan data ve formuláři. Objekt bude mít následující strukturu:
+1. V komponentě vytvořte jeden stav `user`. Ve stavu bude objekt reprezentující všechna data ve formuláři. Objekt bude mít následující strukturu:
    ```js
    {
       username: '',
