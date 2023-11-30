@@ -8,6 +8,10 @@ const Registration = () => {
     passwordConfirm: "",
   });
 
+  console.log(user)
+  const mail = user.email
+  console.log(mail)
+
   const handleSubmit = (eventy) => {
     eventy.preventDefault();
     console.log(user);
@@ -25,10 +29,6 @@ const Registration = () => {
     }
   };
 
-  if (name === "email") {
-    autofill();
-  }
-
   return (
     <div>
       <h1>Registration</h1>
@@ -37,7 +37,7 @@ const Registration = () => {
           type="text"
           name="email"
           value={user.email}
-          onChange={(e) => setUser({ ...user, email: e.target.value })}
+          onChange={(e) => {setUser({ ...user, email: e.target.value }),autofill()}}
           placeholder="Email Adress"
         />
         <input
@@ -62,7 +62,7 @@ const Registration = () => {
           onChange={(event) => setUser({ ...user, passwordConfirm: event.target.value })}
           placeholder="Confirm Password"
         />
-        <button type="submit" id="button"></button>
+        <button type="submit" id="button">REGISTRATION</button>
       </form>
     </div>
   );

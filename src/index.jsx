@@ -1,8 +1,7 @@
-import { createRoot } from 'react-dom/client';
-import { HomePage } from './pages/HomePage';
-import { createBrowserRouter, RouterProvider, Link, Outlet } from 'react-router-dom';
-import './global.css';
 import React from "react";
+import { createRoot } from 'react-dom/client';
+import { createBrowserRouter} from 'react-router-dom';
+import './global.css';
 import Registration from "./components/Registration";
 
 const App = () => {
@@ -15,4 +14,4 @@ const App = () => {
 
 createRoot(
   document.querySelector('#app'),
-).render(<RouterProvider router={router} />);
+).render(<App />);
